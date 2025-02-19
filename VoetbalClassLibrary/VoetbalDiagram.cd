@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="VoetbalClassLibrary.Team">
+    <Position X="9.5" Y="1" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAACAAEBAAABAAAABAAABAAEAAQABAAAAA=</HashCode>
+      <FileName>Team.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Kapitein" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Voetballers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="VoetbalClassLibrary.Voetballer">
+    <Position X="4" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgEgAIARIEBAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Voetballer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
