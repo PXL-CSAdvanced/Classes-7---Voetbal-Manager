@@ -2,7 +2,7 @@
 
 ## Applicatie layout:
 
-<img src= "images/1.png" style="border: 2px solid grey;" width="800"/>
+<img src= "images/1.1.png" style="border: 2px solid grey;" width="800"/>
 
 
 **Voetbalteam Management App:**
