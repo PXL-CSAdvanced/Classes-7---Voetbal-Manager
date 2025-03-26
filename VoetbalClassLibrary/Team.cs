@@ -8,11 +8,11 @@ namespace VoetbalClassLibrary
 {
     public class Team
     {
-        private List<Footballer> _players;
+        private List<Footballer> _footballers;
 
-        public List<Footballer> Players
+        public List<Footballer> Footballers
         {
-            get { return _players; }
+            get { return _footballers; }
         }
 
         private Footballer _captain;
@@ -22,7 +22,7 @@ namespace VoetbalClassLibrary
         public Team(String name)
         {
             this.Name = name;
-            _players = new List<Footballer>();
+            _footballers = new List<Footballer>();
         }
 
         public Footballer Captain
@@ -30,7 +30,7 @@ namespace VoetbalClassLibrary
             get { return _captain; }
             set
             {
-                if (_players.Contains(value))
+                if (_footballers.Contains(value))
                 {
                     _captain = value;
                 }
@@ -45,19 +45,19 @@ namespace VoetbalClassLibrary
         public double AverageNumberOfGoals()
         {
             double sum = 0;
-            foreach (var footballer in _players)
+            foreach (var footballer in _footballers)
             {
                 sum += footballer.NumberOfGoals;
             }
-            return sum / _players.Count;
+            return sum / _footballers.Count;
         }
 
         public string TeamInformation()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"{Name} heeft {_players.Count} spelers");
+            sb.AppendLine($"{Name} heeft {_footballers.Count} spelers");
             sb.AppendLine("-------------");
-            foreach (var player in _players)
+            foreach (var player in _footballers)
             {
                 if (player.Equals(_captain))
                 {
@@ -73,18 +73,18 @@ namespace VoetbalClassLibrary
             return sb.ToString();
         }
 
-        public void AddPlayer(Footballer player, bool isCaptain)
+        public void AddPlayer(Footballer footballer, bool isCaptain)
         {
-            _players.Add(player);
+            _footballers.Add(footballer);
             if (isCaptain)
             {
-                Captain = player;
+                Captain = footballer;
             }
         }
 
-        public void RemovePlayer(Footballer player)
+        public void RemovePlayer(Footballer footballer)
         {
-            _players.Remove(player);
+            _footballers.Remove(footballer);
         }
 
         public override string ToString()

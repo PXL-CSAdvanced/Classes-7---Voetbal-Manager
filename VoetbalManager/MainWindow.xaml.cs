@@ -52,7 +52,7 @@ namespace VoetbalManager
                 Team selectedTeam = teamsComboBox.SelectedItem as Team;
                 teamInfoTextBox.Text = selectedTeam.TeamInformation();
                 footballersListBox.Items.Clear();
-                foreach (var footballer in selectedTeam.Players)
+                foreach (var footballer in selectedTeam.Footballers)
                 {
                     footballersListBox.Items.Add(footballer);
                 }

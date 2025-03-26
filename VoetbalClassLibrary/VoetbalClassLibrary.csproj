@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Footballer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Team.cs" />
-    <Compile Include="Voetballer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="VoetbalDiagram.cd" />
